@@ -4,10 +4,10 @@ import { useState } from 'react'
 // import './App.css'
 import Navbar from './components/Navbar'
 import First from './components/First'
-import About from './components/About'
+// import About from './components/About'
 import Alert from './components/Alert';
 // import CircularPalette from './components/CircularPalette';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 
@@ -48,15 +48,16 @@ const bgColor = (color) => {
 
   return (
     <>
-     <Router>
+     {/* <Router> */}
      
      < Navbar title="TextMaster" mode={mode} toggleMode={toggleMode} bgColor={bgColor}/>
      <Alert alert={alert} />
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={ < First mode={mode} toggleMode={toggleMode} showAlert={showAlert}/>} />
         <Route path="/about" element={<About mode={mode} toggleMode={toggleMode}/> } />
       </Routes>
-    </Router>
+    </Router> */}
+    < First mode={mode} toggleMode={toggleMode} showAlert={showAlert}/>
      
     </>
   )
