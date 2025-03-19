@@ -78,16 +78,16 @@ export default function First(props) {
             <div className="form-group my-3">
                 <textarea className="form-control" id="textBox" rows="10" placeholder='Enter You text' value={text} onChange={handleOnChange} style={style}></textarea>
             </div>
-            <button className='btn btn-primary mx-1' onClick={handleUpClick} type='button'>Uppercase</button>
-            <button className='btn btn-primary mx-1' onClick={handleLoClick} type='button'>Lowercase</button>
-            <button className='btn btn-primary mx-1' onClick={handleCapitalClick } type='button'>Capitalize</button>
+            <button className='btn btn-primary m-1' onClick={handleUpClick} type='button'>Uppercase</button>
+            <button className='btn btn-primary m-1' onClick={handleLoClick} type='button'>Lowercase</button>
+            <button className='btn btn-primary m-1' onClick={handleCapitalClick } type='button'>Capitalize</button>
             
-            <button className='btn btn-primary mx-1' onClick={handleClearClick} type='button'>Clear</button>
+            <button className='btn btn-primary m-1' onClick={handleClearClick} type='button'>Clear</button>
             <button className='btn btn-primary mx-1' onClick={handleBold} type='button'>Bold</button>
-            <button className='btn btn-primary mx-1' onClick={handleUnderLine} type='button'>Underline</button>
-            <button className='btn btn-primary mx-1' onClick={handleItalic} type='button'>Italic</button>
-            <button className='btn btn-primary mx-1' onClick={handleRemoveExtraSpace} type='button'>Remove extra space</button>
-            <button className='btn btn-primary mx-1' onClick={handleCopy} type='button'>Copy Text</button>
+            <button className='btn btn-primary m-1' onClick={handleUnderLine} type='button'>Underline</button>
+            <button className='btn btn-primary m-1' onClick={handleItalic} type='button'>Italic</button>
+            <button className='btn btn-primary m-1' onClick={handleRemoveExtraSpace} type='button'>Remove extra space</button>
+            <button className='btn btn-primary m-1' onClick={handleCopy} type='button'>Copy Text</button>
 
             
         </form>
