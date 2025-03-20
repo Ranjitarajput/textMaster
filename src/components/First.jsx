@@ -67,7 +67,7 @@ export default function First(props) {
         fontStyle: (isItalic)? "italic" : "normal", 
         textTransform: isCapitalize ? "capitalize" : "none"
     }
-    console.log(style);
+    // console.log(style);
    
 
   return (
@@ -94,7 +94,7 @@ export default function First(props) {
         </div>
     <div className={`container my-3  text-${props.mode === 'dark'?'white':'black'}`}>
         <h5>Your text summary</h5>
-        <span> <b>{text.split(" ").length-1} </b> Words and <b>{text.length} </b>Characters </span>
+        <span> <b>{text.split(" ").filter((ele) => {return ele.length != 0}).length} </b> Words and <b>{text.length} </b>Characters </span>
         <p>It will take <b>{ 0.08 * (text.split(" ").length-1)}</b> minuts to be read </p>
 
         <h5>Review your text</h5>
