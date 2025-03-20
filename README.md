@@ -14,3 +14,6 @@ If you are developing a production application, we recommend using TypeScript an
 
 ## Run  build  coomand ke bad app deploy karne ke liye
 //jab npm run build kiya tab dist folder creat hua hai esliye is command ko update karna padega 
+
+## for deploy your website on github pages use -  deploy creat react app github pages 
+without router follow all the steps
