@@ -47,7 +47,7 @@ export default function Navbar(props) {
       <CircularPalette bgColor = {props.bgColor} />
       <div className={`form-check form-switch mx-2 text-${props.mode === 'dark'?'white':'black'}`}>
         <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-        <label className="form-check-label" htmlFor="flexSwitchCheckDefault" >Enable dark mode</label>
+        <label className="form-check-label" htmlFor="flexSwitchCheckDefault" >Enable {props.mode === 'dark'?'light': 'dark'} mode</label>
       </div>
     </div>
   </div>

@@ -95,7 +95,7 @@ export default function First(props) {
     <div className={`container my-3  text-${props.mode === 'dark'?'white':'black'}`}>
         <h5>Your text summary</h5>
         <span> <b>{text.split(" ").filter((ele) => {return ele.length != 0}).length} </b> Words and <b>{text.length} </b>Characters </span>
-        <p>It will take <b>{ 0.08 * (text.split(" ").length-1)}</b> minuts to be read </p>
+        <p>It will take <b>{ 0.08 * (text.split(" ").filter((ele) => {return ele.length != 0}).length)}</b> minuts to be read </p>
 
         <h5>Review your text</h5>
         <p className={`border border-${props.mode === 'dark'?'white':'black'} rounded p-3 my-3`}>{text}</p>
