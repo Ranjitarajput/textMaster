@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import About from './About'
 export default function First(props) {
     const [text, setText] = useState("hiii");
     const [isBold, setIsBold] = useState(false);
@@ -100,6 +100,7 @@ export default function First(props) {
         <h5>Review your text</h5>
         <p className={`border border-${props.mode === 'dark'?'white':'black'} rounded p-3 my-3`}>{text}</p>
     </div>
+<About mode = {props.mode}/>
 </>
   )
 }
