@@ -17,3 +17,12 @@ If you are developing a production application, we recommend using TypeScript an
 
 ## for deploy your website on github pages use -  deploy creat react app github pages 
 without router follow all the steps
+
+## uploaded project ko upadate kane ke liye follow this steps 
+npm run build
+git add .
+git commit -m "Updated the React app"
+git push origin main
+npm run deploy
+
+check your uploaded website after few minuts on the url you aded homepage in package.json 

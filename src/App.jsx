@@ -14,7 +14,8 @@ import Alert from './components/Alert';
 function App() {
   const [mode, setMode] = useState('light');
   const [alert, setAlert] = useState(null);
-
+  //This line always runs, so even when you switch to light mode (toggleMode function), the body color immediately gets reset to black.
+  // document.body.style.backgroundColor = 'black';
   const showAlert = (message, type) => { 
     setAlert({
       msg : message,
@@ -24,19 +25,19 @@ function App() {
     setAlert(null);
   },2000)
   }
-  //#232626 ,#410445,56021F,034C53
+  //#232626 ,#410445,56021F,034C53w
 
   const toggleMode = () => {
-  if(mode === 'light') {
-      setMode('dark');
-      document.body.style.backgroundColor = 'black';
-      showAlert("Dark mode inabled", "success");
-      document.title = "Textutils dark Mode";
+  if(mode === 'dark') {
+      setMode('light');
+      document.body.style.backgroundColor = 'white';
+      showAlert("light mode inabled", "success");
+      // document.title = "Textutils dark Mode";
   } else {
-    setMode('light');
-    document.body.style.backgroundColor = 'white';
-    showAlert("Light mode inabled", "success");
-    document.title = "Textutils light Mode";
+    setMode('dark');
+    document.body.style.backgroundColor = 'black';
+    showAlert("dark mode inabled", "success");
+    // document.title = "Textutils light Mode";
   }
 };
 
@@ -57,7 +58,7 @@ const bgColor = (color) => {
         <Route path="/about" element={<About mode={mode} toggleMode={toggleMode}/> } />
       </Routes>
     </Router> */}
-    < First mode={mode} toggleMode={toggleMode} showAlert={showAlert}/>
+    < First mode={mode} toggleMode={toggleMode} showAlert={showAlert} heading="Try TextMaster - Word Counter, Character Counter, Remove Extra Spaces"/>
      
     </>
   )
